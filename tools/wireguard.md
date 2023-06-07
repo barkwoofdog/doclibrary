@@ -129,7 +129,7 @@ PostDown = iptables -t nat -D PREROUTING -p tcp -i eth0
 
 --match multiport '!' --ports $adminports$ -j DNAT --to-destination $peer$; iptables -t nat -D POSTROUTING -o eth0 -j SNAT --to-source $publicAddress$
 
-PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 '!' --dport 55420 -j DNAT --to-destination $peerAddress;
+PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 '!' --dport $wgPort$ -j DNAT --to-destination $peerAddress;
 ```
 What Up makes, Down Taketh away
 
