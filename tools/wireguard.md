@@ -64,7 +64,7 @@ bash <(wget -qO https://raw.githubusercontent.com/barkwoofdog/howtowithdog/main/
 
 **HOWEVER** this would be the way to do it step by step
 
-##### Create The Interface File
+#### Create The Interface File
 ```bash
 (umask 077 && printf "[Interface]\nPrivateKey = " | sudo tee /etc/wireguard/wg1.conf > /dev/null)
 ```
@@ -76,7 +76,7 @@ the above will
 PrivateKey= 
 ```
 
-##### Generate Your Keys
+#### Generate Your Keys
 
 Wireguard is able to secure your traffic through key exchange, and uses its own generation tools to make these keys. ([[wg-tools]])
 
@@ -105,16 +105,16 @@ PublicKey=
 AllowedIPs= 10.0.0.10/32
 ```
 
-##### ListenPort
+#### ListenPort
 The UDP Port this Interface listens on. Be sure to allow it on your firewall
 
-##### Address
+#### Address
 On the Listener (*what you connect to*) this defines the subnet you will be using for all other connections. So if I use `10.10.200.0/24` I have the standard 254 addressable hosts to allow on this interface
 
-##### DNS
+#### DNS
 if you have `resolvconf` installed, wireguard can set the DNS for all connections on the interface.
 
-##### PostUp/PostDown
+#### PostUp/PostDown
 Firewall rules to be Implemented/Removed upon Standup/Teardown of the tunnel. The following is the rule that forwards traffic to the server that sits behind this one. Detailed more in [my guide on bypassing your ISP's crap](https://github.com/barkwoofdog/howtowithdog/wiki/Hosting-Your-Own-Server-&-Bypassing-Your-ISP-with--Wireguard)
 ```bash
 # note that eth0 is my physical interface where the traffic will enter
@@ -133,16 +133,16 @@ PostDown = iptables -t nat -D PREROUTING -p udp -i eth0 '!' --dport $wgPort$ -j 
 ```
 What Up makes, Down Taketh away
 
-##### [Peer]
+#### [Peer]
 Much like [Interface] allows the definition of the Interface configuration, Values that follow this will configure the Connecting Hosts
 
-##### PublicKey
+#### PublicKey
 The application you download from any store will autogenerate a public key. Put it here
 
-##### AllowedIPs
+#### AllowedIPs
 The IP on the wireguard subnet this host is expected to assume. note you **MUST** use a `/32` as its subnet mask, as it is the ONLY IP expected. 
 
-##### Success! Your Listener is configured
+#### Success! Your Listener is configured
 Configuring a peer is quite simple. Below is an example of a peer configuration
 
 ```bash
@@ -159,13 +159,13 @@ PersistentKeepAlive= 30
 
 There are a few unique circumstances to a Peer Configuration. 
 
-##### Endpoint
+#### Endpoint
 this is the server you will be connected to. You must designate a port
 `192.168.0.5:50069`
 
-##### AllowedIPs
+#### AllowedIPs
 This is set to `0.0.0.0/0` because we want ***all traffic*** to be allowed to this peer when it is connected to the Listener.  
 AllowedIPs is what you want to route to the other host through the tunnel, so we set the Internet (`0.0.0.0/0`)
 
-##### PersistentKeepAlive
+#### PersistentKeepAlive
 How often the peer will "check-in" if it is coing from a NAT'ed peer to a public peer. This is required to keep the connection alive in the router's table. Recommended for all peer clients
