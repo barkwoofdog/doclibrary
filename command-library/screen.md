@@ -94,7 +94,7 @@ screen -ls
 
 Here is an example of what this looks like
 
-![[Pasted image 20230921121731.png]]
+![[https://github.com/barkwoofdog/doclibrary/blob/43b25c455173a7c3a4dc13ab9530b1c882586324/images/screen_com.png]]
 
 the numbers in front of `.ttys` are the Session ID's. 
 So in order to get back into on of these sessions you would just run
