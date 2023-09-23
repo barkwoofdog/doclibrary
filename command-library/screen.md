@@ -20,6 +20,8 @@ Just one of the cool things about this utility is that you can run multiple scre
 The keyboard shortcuts in `screen` involve a lot of "latency" which is to say that you will be pressing multiple keys like `ctrl+a` and then `?` afterwards. In fact, the `ctrl + a` `?` (it is of note that you must actually input `?` as in you must hit `shift` and the`/|?` key to input `?`)
 combination after opening a `screen` session will give you a list of commands for the program.
 
+for ease of understanding, when saying `ctrl + a` you will not really be entering the `+` character as a keystroke, instead it is to imply you must enter both the `ctrl` and `a` keystrokes at the same time.
+
 
 ## Named Sessions
 
