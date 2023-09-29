@@ -24,7 +24,7 @@ curl https://www.digitalocean.com/robots.txt
 ```
 
 here is what you will see (well, a small bit of it)
-![example output](https://github.com/barkwoofdog/doclibrary/blob/139bffc83b37146b7f3c7d98b6173bc30c8c40df/images/dict.png)
+![example output](https://github.com/barkwoofdog/doclibrary/blob/77a449a8a3e4b3212bc4a113ae916e8b483a6748/images/curl-quickscreen.png)
 
 All `curl` did was fetch the contents of `robots.txt` and displayed it. Think about how useful this command would be when browsing FTP site contents from a terminal !
 
