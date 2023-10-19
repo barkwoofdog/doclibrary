@@ -2,24 +2,24 @@
 
 Use these links to jump to specific topics
 
-[Basic Navigation]()
+[Basic Navigation](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#Normal-Mode)
 
-[Horizontal Movement]()
+[Horizontal Movement](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#Horizontal-Movement)
 
-[The Difference Between words and WORDS]()
+[The Difference Between words and WORDS](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#INTERLUDE-The-Different-Between-words-and-WORDS)
 
-[Move to Specific Characters in a Line]()
+[Move to Specific Characters in a Line](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#Move-to-Characters)
 
-[More Basic Line Movements]()
+[More Basic Line Movements](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#More-Line-Movements)
 
 
-[Vertical Movement]()
+[Vertical Movement](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#Vertical-Movement)
 
-[Search Functionality]()
+[Search Functionality](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#Search-Functionality)
 
-[Augementing Movement: Counts]()
+[Augementing Movement: Counts](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#Counts)
 
-[Bonus Tricks]()
+[Bonus Tricks](https://github.com/barkwoofdog/doclibrary/blob/main/vim/normalMode-Motions.md#A-Few-More-Helpful-Motions)
 
 # Normal Mode
 
@@ -80,7 +80,7 @@ when you encounter "WORDS" you will need to use the `SHIFT` key
 `B` moves you backwards a WORD
 _________
 
-### INTERLUDE: The Different Between "words" and "WORDS"
+### INTERLUDE The Different Between words and WORDS
 
 America,
 
