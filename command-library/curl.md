@@ -3,7 +3,9 @@
 curl is an extremely useful and versatile data transfer tool. It supports many protocols and is often installed by default on many systems. More often than not, it is used for downloading files onto your local machine, and finds its place on servers where no GUI exists for a web browser. However, don't think that this means that it is only used for data download!
 
 [DigitalOcean - curl](https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl)
+
 [geeksforgeeks - curl](https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/)
+
 [curl documentation](https://curl.se/docs/tutorial.html)
 
 ______
